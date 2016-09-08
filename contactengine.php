@@ -1,8 +1,8 @@
 <?php
 
-$EmailFrom = "info@cocoonfxmedia.co.uk";
-$EmailTo = "cocoonfxmedia@gmail.com";
-$Subject = "Nice & Simple Contact Form by CSS-Tricks";
+$EmailFrom = "lichfield@smiles.uk.com";
+$EmailTo = "lichfield@smiles.uk.com";
+$Subject = "Information Request From Website";
 $Name = Trim(stripslashes($_POST['Name'])); 
 $Tel = Trim(stripslashes($_POST['Tel'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
@@ -35,9 +35,9 @@ $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contact-denture.html\">";
 }
 ?>
